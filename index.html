@@ -1,3 +1,53 @@
-<div class="top-clock">
-  <span id="time"></span>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clock Test</title>
+
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial;
+    }
+
+    .floating-clock {
+      position: fixed;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: #888;
+      writing-mode: vertical-rl;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="floating-clock">
+    <span id="time">Loading...</span>
+  </div>
+
+  <!-- JS MUST BE HERE -->
+  <script>
+    function updateTime() {
+      const now = new Date();
+
+      const timeString = now.toLocaleTimeString("en-AU", {
+        timeZone: "Australia/Melbourne",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      });
+
+      document.getElementById("time").textContent = timeString;
+    }
+
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+.floating-clock {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #888;
+  writing-mode: vertical-rl;
+}

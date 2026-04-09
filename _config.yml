@@ -1,4 +1,5 @@
 title: Don Madushan W
+clock: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <title>Portfolio Clock</title> <link rel="stylesheet" href="style.css" /> </head> <body> <div class="clock-container"> <p class="location">Melbourne, AU</p> <h1 id="clock"></h1> </div> <script src="script.js"></script> </body> </html>
 logo: assets/img/head1.png
 description: text below image
 show_downloads: true

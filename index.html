@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Don Madushan | QA Engineer</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1, h2 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #00adb5;
+}
+
+p {
+  color: #ccc;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Clock Style */
+.clock-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.location {
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+#clock {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- CLOCK -->
+  <div class="clock-container">
+    <div class="location">Melbourne, AU</div>
+    <div id="clock"></div>
+  </div>
+
+  <h1>Don Madushan</h1>
+
+  <p>
+    Detail-oriented QA Engineer with 8+ years of experience in functional, regression, and exploratory testing across web and API platforms. Skilled in defect tracking, test case design, and collaborating with cross-functional teams to deliver reliable software. Familiar with Playwright automation, GitLab workflows, and Agile practices. Strong analytical mindset with a focus on quality, continuous improvement, and user experience.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Designed and executed functional, regression, and exploratory test cases</li>
+    <li>Defect tracking using Jira and Azure DevOps</li>
+    <li>Automation scripting using Playwright (UI & E2E)</li>
+    <li>Test documentation: test cases, plans, defect reports</li>
+    <li>Collaborated with developers for validation and fixes</li>
+    <li>Strong analytical and problem-solving skills</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <p><strong>Transtel Vodafone | Oct 2024 – Present</strong></p>
+  <ul>
+    <li>Executed end-to-end SIT test cases for telecom modules</li>
+    <li>Worked with developers and testers in Agile teams</li>
+    <li>Led automation and regression testing</li>
+    <li>Managed defects in Jira improving efficiency by 30%</li>
+    <li>Used Azure DevOps for backend defect tracking</li>
+  </ul>
+
+  <h2>Additional Projects</h2>
+  <ul>
+    <li>Transtel Config App | Test Analyst</li>
+    <li>Axiata Genie App | Senior QA Engineer</li>
+    <li>Oracle HCM Cloud App | Senior QA Engineer</li>
+    <li>NTB Banking Mobile App | QA Engineer</li>
+    <li>Citi RPA | QA Engineer</li>
+  </ul>
+
+  <h2>Professional Experience</h2>
+
+  <p><strong>Test Analyst – Transtel (Melbourne)</strong></p>
+  <ul>
+    <li>Improved regression efficiency using automation frameworks</li>
+    <li>Led end-to-end testing for enterprise telecom systems</li>
+    <li>Mentored junior testers</li>
+    <li>Prepared RTM, test plans, and reports</li>
+  </ul>
+
+  <p><strong>Senior QA Engineer – Virtusa</strong></p>
+  <ul>
+    <li>Performed SIT/UAT and API testing</li>
+    <li>Validated backend data using SQL</li>
+    <li>Automated APIs using REST Assured</li>
+  </ul>
+
+  <p><strong>QA Engineer – Virtusa</strong></p>
+  <ul>
+    <li>Tested Oracle HCM and SAP systems</li>
+    <li>Executed 250+ test cases</li>
+    <li>Detected critical defects before production</li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li>Monash Cybersecurity Certificate – Monash University</li>
+    <li>BSc (Hons) MIS – University College Dublin</li>
+    <li>Computer Science Certificate – NIBM</li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <ul>
+    <li>ISTQB Foundation Level</li>
+    <li>Google Crash Course on Python</li>
+    <li>Commonwealth Bank Cybersecurity Simulation</li>
+    <li>Selenium + TestNG Automation Certifications</li>
+  </ul>
+
+</div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+
+  const options = {
+    timeZone: "Australia/Melbourne",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false
+  };
+
+  document.getElementById("clock").textContent =
+    now.toLocaleTimeString("en-AU", options);
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+
+</body>
+</html>

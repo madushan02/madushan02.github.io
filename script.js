@@ -1,0 +1,1 @@
+function updateClock() { const now = new Date(); const options = { timeZone: "Australia/Melbourne", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }; const timeString = now.toLocaleTimeString("en-AU", options); document.getElementById("clock").textContent = timeString; } updateClock(); setInterval(updateClock, 1000);

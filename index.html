@@ -2,156 +2,191 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Don Madushan | QA Engineer</title>
+<title>Don Madushan W - Portfolio</title>
 
 <style>
 body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
-  background: #0d0d0d;
-  color: #f5f5f5;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #222;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 
-h1, h2 {
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  margin-top: 30px;
+.name {
   font-size: 20px;
-  color: #00adb5;
+  font-weight: bold;
 }
 
-p {
-  color: #ccc;
+.icons a {
+  color: orange;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.clock {
+  font-size: 16px;
+  color: orange;
+}
+
+/* CONTENT */
+.container {
+  margin-top: 80px;
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* SECTION */
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 ul {
   padding-left: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-/* Clock Style */
-.clock-container {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.location {
-  font-size: 12px;
-  color: #888;
-  letter-spacing: 2px;
-}
-
-#clock {
-  font-size: 36px;
-  font-weight: 300;
-  letter-spacing: 3px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div class="header">
+  
+  <div class="left-section">
+    <div class="name">Don Madushan W</div>
+    
+    <div class="icons">
+      <a href="#" target="_blank">🔗</a> <!-- LinkedIn -->
+      <a href="#" target="_blank">💻</a> <!-- GitHub -->
+    </div>
 
-  <!-- CLOCK -->
-  <div class="clock-container">
-    <div class="location">Melbourne, AU</div>
-    <div id="clock"></div>
+    <div class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#career">Career</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 
-  <h1>Don Madushan</h1>
-
-  <p>
-    Detail-oriented QA Engineer with 8+ years of experience in functional, regression, and exploratory testing across web and API platforms. Skilled in defect tracking, test case design, and collaborating with cross-functional teams to deliver reliable software. Familiar with Playwright automation, GitLab workflows, and Agile practices. Strong analytical mindset with a focus on quality, continuous improvement, and user experience.
-  </p>
-
-  <h2>Technical Skills</h2>
-  <ul>
-    <li>Designed and executed functional, regression, and exploratory test cases</li>
-    <li>Defect tracking using Jira and Azure DevOps</li>
-    <li>Automation scripting using Playwright (UI & E2E)</li>
-    <li>Test documentation: test cases, plans, defect reports</li>
-    <li>Collaborated with developers for validation and fixes</li>
-    <li>Strong analytical and problem-solving skills</li>
-  </ul>
-
-  <h2>Projects</h2>
-  <p><strong>Transtel Vodafone | Oct 2024 – Present</strong></p>
-  <ul>
-    <li>Executed end-to-end SIT test cases for telecom modules</li>
-    <li>Worked with developers and testers in Agile teams</li>
-    <li>Led automation and regression testing</li>
-    <li>Managed defects in Jira improving efficiency by 30%</li>
-    <li>Used Azure DevOps for backend defect tracking</li>
-  </ul>
-
-  <h2>Additional Projects</h2>
-  <ul>
-    <li>Transtel Config App | Test Analyst</li>
-    <li>Axiata Genie App | Senior QA Engineer</li>
-    <li>Oracle HCM Cloud App | Senior QA Engineer</li>
-    <li>NTB Banking Mobile App | QA Engineer</li>
-    <li>Citi RPA | QA Engineer</li>
-  </ul>
-
-  <h2>Professional Experience</h2>
-
-  <p><strong>Test Analyst – Transtel (Melbourne)</strong></p>
-  <ul>
-    <li>Improved regression efficiency using automation frameworks</li>
-    <li>Led end-to-end testing for enterprise telecom systems</li>
-    <li>Mentored junior testers</li>
-    <li>Prepared RTM, test plans, and reports</li>
-  </ul>
-
-  <p><strong>Senior QA Engineer – Virtusa</strong></p>
-  <ul>
-    <li>Performed SIT/UAT and API testing</li>
-    <li>Validated backend data using SQL</li>
-    <li>Automated APIs using REST Assured</li>
-  </ul>
-
-  <p><strong>QA Engineer – Virtusa</strong></p>
-  <ul>
-    <li>Tested Oracle HCM and SAP systems</li>
-    <li>Executed 250+ test cases</li>
-    <li>Detected critical defects before production</li>
-  </ul>
-
-  <h2>Education</h2>
-  <ul>
-    <li>Monash Cybersecurity Certificate – Monash University</li>
-    <li>BSc (Hons) MIS – University College Dublin</li>
-    <li>Computer Science Certificate – NIBM</li>
-  </ul>
-
-  <h2>Certifications</h2>
-  <ul>
-    <li>ISTQB Foundation Level</li>
-    <li>Google Crash Course on Python</li>
-    <li>Commonwealth Bank Cybersecurity Simulation</li>
-    <li>Selenium + TestNG Automation Certifications</li>
-  </ul>
+  <div class="clock" id="clock"></div>
 
 </div>
 
+<!-- CONTENT -->
+<div class="container">
+
+<section id="home">
+<h2>Home</h2>
+<p>
+Detail-oriented QA Engineer with 8+ years of experience in functional, regression, and exploratory testing across web and API platforms. Skilled in defect tracking, test case design, and collaborating with cross-functional teams to deliver reliable software. Familiar with Playwright automation, GitLab workflows, and Agile practices. Strong analytical mindset with a focus on quality, continuous improvement, and user experience. Australian Permanent Resident based in Melbourne.
+</p>
+</section>
+
+<section id="about">
+<h2>Technical Skills</h2>
+<ul>
+<li>Designed and executed functional, regression, and exploratory test cases</li>
+<li>Defect tracking using Jira and Azure DevOps</li>
+<li>Playwright automation for UI testing</li>
+<li>Created test plans, cases, and defect reports</li>
+<li>Collaborated with developers for validation</li>
+<li>Strong analytical and problem-solving skills</li>
+</ul>
+</section>
+
+<section id="career">
+<h2>Projects</h2>
+<p><b>Transtel Vodafone (Oct 2024 - Present)</b></p>
+<ul>
+<li>Executed SIT test cases and cross-system validation</li>
+<li>Worked with Agile teams and developers</li>
+<li>Managed defects and improved resolution by 30%</li>
+</ul>
+
+<h2>Professional Experience</h2>
+
+<p><b>Test Analyst - Transtel (2022 - Present)</b></p>
+<ul>
+<li>Automation frameworks using Selenium & Java</li>
+<li>End-to-end testing across enterprise systems</li>
+<li>Improved release quality by 25%</li>
+</ul>
+
+<p><b>Senior QA Engineer - Virtusa (2019 - 2021)</b></p>
+<ul>
+<li>API testing with Postman & REST Assured</li>
+<li>SQL validation and backend testing</li>
+<li>Reduced defect turnaround by 35%</li>
+</ul>
+
+<p><b>QA Engineer - Virtusa (2017 - 2019)</b></p>
+<ul>
+<li>Oracle HCM and SAP testing</li>
+<li>Executed 250+ test cases</li>
+<li>Identified critical production issues</li>
+</ul>
+
+<p><b>Associate QA Engineer - Virtusa (2016 - 2017)</b></p>
+<ul>
+<li>Created 100+ test cases</li>
+<li>Improved defect detection by 25%</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Education</h2>
+<ul>
+<li>Monash Cybersecurity Certificate</li>
+<li>BSc (Hons) MIS - University College Dublin</li>
+<li>Computer Science - NIBM</li>
+</ul>
+
+<h2>Certifications</h2>
+<ul>
+<li>ISTQB Foundation Level</li>
+<li>Google Python Certificate</li>
+<li>Selenium Automation Certificates</li>
+</ul>
+
+<p><b>Referees available upon request</b></p>
+</section>
+
+</div>
+
+<!-- CLOCK SCRIPT -->
 <script>
 function updateClock() {
   const now = new Date();
@@ -168,8 +203,8 @@ function updateClock() {
     now.toLocaleTimeString("en-AU", options);
 }
 
-updateClock();
 setInterval(updateClock, 1000);
+updateClock();
 </script>
 
 </body>

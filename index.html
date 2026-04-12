@@ -186,7 +186,7 @@ Detail-oriented QA Engineer with 8+ years of experience in functional, regressio
 
 </div>
 
-<!-- CLOCK SCRIPT -->
+
 <script>
 function updateClock() {
   const now = new Date();
@@ -196,11 +196,15 @@ function updateClock() {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
-    hour12: false
+    hour12: true   
   };
 
-  document.getElementById("clock").textContent =
-    now.toLocaleTimeString("en-AU", options);
+  let timeString = now.toLocaleTimeString("en-AU", options);
+
+  
+  timeString = timeString.replace("AM", "am").replace("PM", "pm");
+
+  document.getElementById("clock").textContent = timeString;
 }
 
 setInterval(updateClock, 1000);

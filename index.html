@@ -40,11 +40,19 @@ body {
   font-weight: bold;
 }
 
-.icons a {
-  color: orange;
+.icons a,
+.nav a {
+  color: white;
   text-decoration: none;
-  font-size: 18px;
-  margin-right: 10px;
+  transition: all 0.3s ease;   
+}
+
+
+.icons a:hover,
+.nav a:hover {
+  color: orange;                      
+  text-shadow: 0 0 8px orange,        
+               0 0 12px orange;
 }
 
 .nav {

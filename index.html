@@ -30,6 +30,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: 25px;
 }
 
 .name {
@@ -56,11 +57,16 @@ body {
   font-size: 14px;
 }
 
-.clock {
-  font-size: 16px;
-  color: orange;
-  margin-right: 23px; 
-
+.time-now {
+	position: fixed;
+	top: 25px;
+	text-align: right;
+	color: var(--orange);
+	font-size: 15px;
+	width: 100%;
+	padding-right: 20px;
+	font-weight: 500;
+	z-index: -10;
 }
 
 /* CONTENT */

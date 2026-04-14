@@ -49,7 +49,6 @@ body {
 
 .icon:hover {
   color: #ff8c00;  
-  transform: scale(1.2);
   text-shadow: 0 0 8px #ff8c00, 
                0 0 15px #ff8c00;
 }
@@ -63,7 +62,12 @@ body {
 .nav a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff8c00;
+  text-shadow: 0 0 6px #ff8c00;
 }
 
 .clock {
@@ -99,10 +103,10 @@ ul {
   <div class="left-section">
     <div class="name">Don Madushan W</div>
     
-    <div class="icons">
-      <a href="#" target="_blank">🔗</a> <!-- LinkedIn -->
-      <a href="#" target="_blank">💻</a> <!-- GitHub -->
-    </div>
+     <div class="icons">
+      <a href="#" target="_blank" class="icon">🔗</a>
+      <a href="#" target="_blank" class="icon">💻</a>
+     </div>
 
     <div class="nav">
       <a href="#home">Home</a>

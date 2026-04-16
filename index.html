@@ -27,6 +27,52 @@ body {
   padding: 18px 23px;
   z-index: 1000;
 }
+.timeline-container {
+  margin-top: 40px;
+  padding-left: 20px;
+}
+
+.timeline {
+  position: relative;
+  list-style: none;
+  padding-left: 20px;
+}
+
+/* vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ff8c00;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+/* dot */
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #ff8c00;
+  border-radius: 50%;
+}
+
+/* year */
+.timeline li span {
+  font-weight: bold;
+  color: #ff8c00;
+  margin-right: 10px;
+}
 
 .left-section {
   display: flex;
@@ -124,43 +170,17 @@ ul {
   <div class="clock" id="clock"></div>
 
 </div>
-.timeline li {
-  list-style: none;
-  margin: 10px 0;
-}
-<div class="card-container">
-    
-    <div class="card-inner">
-        
-        <div class="home-content-2">
-            <img src="assets/images/Self-Portrait-BW.png" alt="Don Madushan">
-        </div>
 
-        <div class="home-content-1">
-            <span class="greet">Hi! I'm Don.</span>
-            <strong>QA Engineer | Automation Tester</strong>
-
-            <p class="greet-desc">
-                Detail-oriented QA Engineer with 8+ years of experience in 
-                functional, regression, and automation testing across web and API platforms.
-                Skilled in Playwright, Selenium, and Agile delivery.
-            </p>
-        </div>
-
-    </div>
-
-    <div class="home-content-3">
-        <ul class="timeline">
-            <li data-year="2015" data-text="HR Intern"></li>
-            <li data-year="2016" data-text="Associate QA Engineer"></li>
-            <li data-year="2017" data-text="QA Engineer"></li>
-            <li data-year="2019" data-text="Senior QA Engineer"></li>
-            <li data-year="2021" data-text="Customer Delivery Driver - Dnata"></li>
-            <li data-year="2022" data-text="Test Analyst"></li>
-        </ul>
-    </div>
-
-</div>
+<div class="timeline-container">
+  <ul class="timeline">
+    <li><span>2015</span> HR Intern</li>
+    <li><span>2016</span> Associate QA Engineer</li>
+    <li><span>2017</span> QA Engineer</li>
+    <li><span>2019</span> Senior QA Engineer</li>
+    <li><span>2021</span> Customer Delivery Driver - Dnata</li>
+    <li><span>2022</span> Test Analyst</li>
+  </ul>
+</div>  
 
 <!-- CONTENT -->
 <div class="container">

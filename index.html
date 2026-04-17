@@ -32,7 +32,23 @@ body {
   padding-left: 20px;
 }
 
+.timeline {
+	width: 90%;
+	max-width: 1000px;
+	height: 30px;
+	list-style: none;
+	margin: 700px auto;
+	margin-left: 500px;  
+	padding: 0;
+	text-align: justify;
 
+	background: linear-gradient(
+		to bottom,
+		transparent 45%,
+		#ff8c00 50%,
+		transparent 55%
+	);
+}
 
 /* vertical line */
 .timeline::before {
@@ -208,16 +224,7 @@ ul {
 
 </div>
 
-<div class="timeline-container">
-  <ul class="timeline">
-	<li data-year="2015" data-text="HR Intern"></li>
-	<li data-year="2016" data-text="Associate QA Engineer"></li>
-	<li data-year="2017" data-text="QA Engineer"></li>
-	<li data-year="2019" data-text="Senior QA Engineer"></li>
-	<li data-year="2021" data-text="Customer Delivery Driver - Dnata"></li>
-	<li data-year="2022" data-text="Test Analyst"></li>
-</ul>
-</div>  
+
 
 <!-- CONTENT -->
 <div class="container">
@@ -229,23 +236,16 @@ Detail-oriented QA Engineer with 8+ years of experience in functional, regressio
 </p>
 </section>
 
-.timeline {
-	width: 90%;
-	max-width: 1000px;
-	height: 30px;
-	list-style: none;
-	margin: 700px auto;
-	margin-left: 500px;  
-	padding: 0;
-	text-align: justify;
-
-	background: linear-gradient(
-		to bottom,
-		transparent 45%,
-		#ff8c00 50%,
-		transparent 55%
-	);
-}
+<div class="timeline-container">
+  <ul class="timeline">
+	<li data-year="2015" data-text="HR Intern"></li>
+	<li data-year="2016" data-text="Associate QA Engineer"></li>
+	<li data-year="2017" data-text="QA Engineer"></li>
+	<li data-year="2019" data-text="Senior QA Engineer"></li>
+	<li data-year="2021" data-text="Customer Delivery Driver - Dnata"></li>
+	<li data-year="2022" data-text="Test Analyst"></li>
+</ul>
+</div>  
 	
 <section id="about">
 <h2>Technical Skills</h2>

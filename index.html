@@ -220,10 +220,17 @@ body {
 
 /* CONTENT */
 .container {
-  max-width: 1000px;
-  margin: 500px auto 700px auto;  
-  text-align: left;
+  display: flex;
+  align-items: flex-start;   /* 👈 aligns image with TOP of text */
+  justify-content: center;
+  gap: 30px;
 }
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* 👈 ensures left alignment */
+}	
 
 /* SECTION */
 h2 {
@@ -268,17 +275,19 @@ ul {
 <!-- CONTENT -->
 <div class="container">
 
-<div class="photo">
+  <div class="photo">
     <img src="assets/images/head1.png" alt="Don Madushan" title="Hi! This is me.">
-</div>
+  </div>
 
-<section id="home">
-<span class="greet">Hi! I'm Don.</span>
-<strong class="role">QA Engineer | Automation Tester | ISTQB | Cyber Security</strong>
-<span class="greet-desc">
+  <div class="home">
+    <span class="greet">Hi! I'm Don.</span>
+    <strong class="role">QA Engineer | Automation Tester</strong>
+    <span class="greet-desc">
 Detail-oriented QA Engineer with 8+<br /> years of experience in functional, regression,<br /> and exploratory testing across web and API platforms.<br /> Skilled in defect tracking, test case design,<br /> and collaborating with cross-functional teams to <br />deliver reliable software. Familiar with Playwright <br />automation, GitLab workflows, and Agile practices.<br /> Strong analytical mindset with a focus on quality, <br />continuous improvement, and user experience.<br /> Australian Permanent Resident based in Melbourne.
 </span>
-</section>
+  </div>
+
+</div>
 
 <div class="timeline-container">
   <ul class="timeline">
